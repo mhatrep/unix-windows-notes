@@ -20,3 +20,8 @@ sudo yum  -y install postgresql
 
 dd if=/dev/zero of=output.out bs=15432 count=1
 dd if=/dev/zero of=outpute.out bs=1024k count=24
+
+# Gzip files
+zcat
+zless
+zgrep
