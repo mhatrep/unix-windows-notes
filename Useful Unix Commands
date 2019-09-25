@@ -35,3 +35,7 @@ do
   ./my.sh "<args>"
 done
 
+# Debug Shell Scripts
+
+add -ex switch and run the line below to print line numbers:
+PS4='Line ${LINENO}: ' ./my.sh "<args>"
