@@ -25,3 +25,13 @@ dd if=/dev/zero of=outpute.out bs=1024k count=24
 zcat
 zless
 zgrep
+
+# Run command / script n number of times
+
+#!/bin/bash -e
+for run in {1..20}
+do
+  echo "================= Run # = $run ==================="
+  ./my.sh "<args>"
+done
+
