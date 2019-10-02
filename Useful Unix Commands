@@ -39,3 +39,10 @@ done
 
 add -ex switch and run the line below to print line numbers:
 PS4='Line ${LINENO}: ' ./my.sh "<args>"
+
+# Create nested dirs with a single command
+mkdir -p tmp/a/b/c
+
+# Trim white space from pipeline
+<pipline commands> | xargs
+
