@@ -1,0 +1,3 @@
+# CPU Usage Per Process
+mpstat -P ALL
+
