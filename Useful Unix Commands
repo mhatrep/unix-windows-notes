@@ -46,3 +46,5 @@ mkdir -p tmp/a/b/c
 # Trim white space from pipeline
 <pipline commands> | xargs
 
+# Create File with Specific Timestamp
+touch -a -m -t 200201181205.09 aa.jpg bb.jpg
