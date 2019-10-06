@@ -1,3 +1,20 @@
 # CPU Usage Per Process
 mpstat -P ALL
 
+# List Open Files
+lsof
+
+# Display CPU usage, Memory usage, Swap Memory, Cache Size, Buffer Size, Process PID, User, Commands and much more
+top
+
+# Virtual Memory Statistics
+vmstat
+
+# Network Packet Analyzer
+tcpdump -i eth0
+
+# Network Statistics
+netstat -ano
+
+# Linux Process Monitoring
+htop
