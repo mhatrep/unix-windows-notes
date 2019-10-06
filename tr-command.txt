@@ -1,0 +1,9 @@
+# Convert lowercase to uppercase
+>> cat my.txt | tr [:lower:] [:upper:]
+>> cat my.txt | tr [a-z] [A-Z]
+
+# Remove spaces
+# cat my.txt | tr -d '' 
+
+# Replace multiple character occurances with one
+cat my.txt | tr -s '' 
