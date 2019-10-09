@@ -48,3 +48,6 @@ mkdir -p tmp/a/b/c
 
 # Create File with Specific Timestamp
 touch -a -m -t 200201181205.09 aa.jpg bb.jpg
+
+# Get all Java code in a single file
+find . -name "*.java" -type f 2>/dev/null | xargs cat >> out.txt
