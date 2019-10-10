@@ -1,0 +1,8 @@
+# Ascending order
+>> sort input.txt
+
+# Descending order
+>> sort -r input.txt
+
+# By third field (Tab Delimited)
+>> sort -t: -k 3n input.txt | more
