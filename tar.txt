@@ -1,0 +1,8 @@
+# Create a new archive
+>> tar cvf tar_archive.tar mydir/
+
+# View tar archive
+>> tar tvf tar_archive.tar
+
+# Extract tar archive
+>> tar xvf tar_archive.tar
