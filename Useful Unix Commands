@@ -1,6 +1,6 @@
 # Install software
 sudo yum  -y install postgresql
-
+----------------------------------------------------
 # Regular expressions (regex) classes
 
  [[:alnum:]]  - [A-Za-z0-9]     Alphanumeric characters
@@ -15,17 +15,17 @@ sudo yum  -y install postgresql
  [[:space:]]  - [ \t\v\f]       All whitespace chars
  [[:upper:]]  - [A-Z]           Upper-case alphabetic characters
  [[:xdigit:]] - [0-9a-fA-F]     Hexadecimal digit characters
- 
+---------------------------------------------------- 
 # Create Dummy file with n bytes (File Size = bs x count)
 
 dd if=/dev/zero of=output.out bs=15432 count=1
 dd if=/dev/zero of=outpute.out bs=1024k count=24
-
+----------------------------------------------------
 # Gzip files
 zcat
 zless
 zgrep
-
+----------------------------------------------------
 # Run command / script n number of times
 
 #!/bin/bash -e
