@@ -1,0 +1,12 @@
+paste number file1 file2
+
+# Delimiter
+paste -d "|" number file1 file2
+
+# Serial 
+paste -s number file1 file2
+
+# Combine Delimiter & Serial
+paste -s -d ":" number file1 file2
+
+
