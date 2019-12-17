@@ -15,6 +15,14 @@ $ curl -I www.tecmint.com
 # Make a POST request with Parameters
 $ curl --data "firstName=John&lastName=Doe" https://yourdomain.com/info.php
 
+# Download Files from an FTP Server with or without Authentication
+$ curl -u username:password -O ftp://yourftpserver/yourfile.tar.gz 
+
+# Upload Files to an FTP server with or without Authentication
+$ curl -u username:password -T mylocalfile.tar.gz ftp://yourftpserver
+
+
+
 References:
 ----------
 https://www.tecmint.com/linux-curl-command-examples/
