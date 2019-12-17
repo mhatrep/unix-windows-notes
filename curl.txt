@@ -1,0 +1,14 @@
+# Curl Commands
+
+$ curl -O http://yourdomain.com/yourfile.tar.gz # Save as yourfile.tar.gz
+$ curl -o newfile.tar.gz http://yourdomain.com/yourfile.tar.gz # Save as newfile.tar.gz
+
+
+# Download Multiple Files
+
+$ curl -O http://yoursite.com/info.html -O http://mysite.com/about.html
+
+
+References:
+----------
+https://www.tecmint.com/linux-curl-command-examples/
