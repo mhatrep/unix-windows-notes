@@ -1,13 +1,19 @@
 # Curl Commands
-
 $ curl -O http://yourdomain.com/yourfile.tar.gz # Save as yourfile.tar.gz
 $ curl -o newfile.tar.gz http://yourdomain.com/yourfile.tar.gz # Save as newfile.tar.gz
 
 
 # Download Multiple Files
-
 $ curl -O http://yoursite.com/info.html -O http://mysite.com/about.html
 
+# Download URLs From a File
+$ xargs -n 1 curl -O < listurls.txt
+
+# Query HTTP Headers
+$ curl -I www.tecmint.com
+
+# Make a POST request with Parameters
+$ curl --data "firstName=John&lastName=Doe" https://yourdomain.com/info.php
 
 References:
 ----------
