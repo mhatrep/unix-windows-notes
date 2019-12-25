@@ -26,3 +26,29 @@ $ curl -u username:password -T mylocalfile.tar.gz ftp://yourftpserver
 References:
 ----------
 https://www.tecmint.com/linux-curl-command-examples/
+
+
+----------------------------------------------------
+
+Use the optional arg -O to save the le with its original name:
+$ curl -O https://websitename.com/datafilename.txt
+
+To rename the file, use the lower case -o + new le name:
+$ curl -o renameddatafilename.txt https://websitename.com/datafilename.txt
+$ curl -O https://websitename.com/datafilename*.txt
+$ curl -O https://websitename.com/datafilename[001-100].txt
+
+Increment through the files and download every Nth file (e.g. datafilename010.txt ,datafilename020.txt , ... datafilename100.txt )
+$  curl -O https://websitename.com/datafilename[001-100:10].txt
+
+curl has two particularly useful option ags in case oftimeouts during download:
+-L Redirects the HTTP URL if a 300 error code occurs.
+-C Resumes a previous le transfer ifit times out before completion.
+Putting everything together:
+$ curl -L -O -C https://websitename.com/datafilename[001-100].txt
+
+All option ags come before the URL
+Order ofthe ags does not matter (e.g. -L -C -O is ne)
+
+
+Reference: https://s3.amazonaws.com/assets.datacamp.com/production/course_15878/slides/chapter1.pdf
