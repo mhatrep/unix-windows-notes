@@ -1,35 +1,36 @@
-pip install csvkit
-pip install --upgrade csvkit
+>> pip install csvkit
+>> pip install --upgrade csvkit
 
 
 Convert Excel to CSV
-in2csv SpotifyData.xlsx > SpotifyData.csv
+>> in2csv SpotifyData.xlsx > SpotifyData.csv
 
 Use --names or -n option to print all sheet names in SpotifyData.xlsx.
-in2csv -n SpotifyData.xlsx
+>> in2csv -n SpotifyData.xlsx
 
-csvlook filename.csv
+>> csvlook filename.csv
+
 csvcut: filtering data by column
 Use --names or -n option to print all column names in Spotify_MusicAttributes.csv .
-csvcut -n Spotify_MusicAttributes.csv
+>> csvcut -n Spotify_MusicAttributes.csv
 
 Returns the rst column in the data, by position:
-csvcut -c 1 Spotify_MusicAttributes.csv
+>> csvcut -c 1 Spotify_MusicAttributes.csv
 
 Returns only the rst column in the data, by name:
-csvcut -c "track_id" Spotify_MusicAttributes.csv
+>> csvcut -c "track_id" Spotify_MusicAttributes.csv
 
 Returns the second and third column in the data, by position:
-csvcut -c 2,3 Spotify_MusicAttributes.csv
+>> csvcut -c 2,3 Spotify_MusicAttributes.csv
 
 Returns the second and third column in the data, by name:
-csvcut -c "danceability","duration_ms" Spotify_MusicAttributes.csv
+>> csvcut -c "danceability","duration_ms" Spotify_MusicAttributes.csv
 
 Find in Spotify_Popularity.csv where track_id = 5RCPsfzmEpTXMCTNk7wEfQ
-csvgrep -c "track_id" -m 5RCPsfzmEpTXMCTNk7wEfQ Spotify_Popularity.csv
+>> csvgrep -c "track_id" -m 5RCPsfzmEpTXMCTNk7wEfQ Spotify_Popularity.csv
 
 Re-format csvcut 's output by piping the output as input to csvlook :
-csvcut -c "track_id","danceability" Spotify_Popularity.csv | csvlook
+>> csvcut -c "track_id","danceability" Spotify_Popularity.csv | csvlook
 
 Reference: Datacamp Tutorial
 ----------------------------------------------------
