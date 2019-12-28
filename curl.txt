@@ -9,6 +9,10 @@ $ curl -o newfile.tar.gz http://yourdomain.com/yourfile.tar.gz # Save as newfile
 # Download Multiple Files
 $ curl -O http://yoursite.com/info.html -O http://mysite.com/about.html
 
+
+----------------------------------------------------
+
+
 # Download URLs From a File
 $ xargs -n 1 curl -O < listurls.txt
 
