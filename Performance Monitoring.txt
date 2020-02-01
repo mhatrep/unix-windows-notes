@@ -1,6 +1,8 @@
 # CPU Usage Per Process
 mpstat -P ALL
 
+----------------------------------------------------
+
 # List Open Files
 lsof
 
