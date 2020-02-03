@@ -1,3 +1,5 @@
+How to install CSVKIT on Windows and MAC.
+----------------------------------------------------
 >> pip install csvkit
 >> pip install --upgrade csvkit
 
