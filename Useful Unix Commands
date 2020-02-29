@@ -2,6 +2,7 @@
 sudo yum  -y install postgresql
 ----------------------------------------------------
 # Regular expressions (regex) classes
+----------------------------------------
 
  [[:alnum:]]  - [A-Za-z0-9]     Alphanumeric characters
  [[:alpha:]]  - [A-Za-z]        Alphabetic characters
