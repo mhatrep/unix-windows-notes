@@ -1,0 +1,5 @@
+1. Cmd (Run by administrator)- ipconfig /flushdns
+2. netsh winsock reset
+3. sfc/scannow 
+4. open chrome settings and under advance-find proxy settings-uncheck(automatic proxy settings)
+5. Finally if not -uninstall google chrome and re-install it.
