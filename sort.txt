@@ -6,3 +6,6 @@
 
 # By third field (Tab Delimited)
 >> sort -t: -k 3n input.txt | more
+
+
+# Sort By Length (asc, desc)
