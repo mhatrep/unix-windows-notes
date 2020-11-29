@@ -64,8 +64,7 @@ sub createContent
 
 	my @values = split(',', $pair_val[1]);
 
-        my $_string="";
-        
+        my $_string="";      
         
         
         my $label_b = qq(<tr><td align="left" bgcolor="aliceblue"><b><i>__STRNG__</i></b></td></tr>
@@ -92,7 +91,6 @@ sub createContent
 
 	return $_string . $label_final;
 }
-
 
 
 #rankdir=LR;
