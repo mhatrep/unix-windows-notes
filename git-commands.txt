@@ -1,0 +1,6 @@
+Reset to specific commit id
+============================
+
+git reset --hard 8323131bf99
+git push origin HEAD --force
+
