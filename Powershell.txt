@@ -1,0 +1,28 @@
+Get-Command -Verb Format -Module Microsoft.PowerShell.Utility
+
+Get-Command -Verb Format | Format-Wide
+
+Get-Command -Verb Format | Format-Wide -Property Noun -Column 3
+
+Get-Process -Name chrome | Format-List
+
+Get-Process -Name chrome | Format-List -Property ProcessName,FileVersion,StartTime,Id
+
+Get-Process -Name chrome | Format-List -Property *
+
+Get-Service -Name win* | Format-Table
+
+Get-Service -Name win* | Format-Table -AutoSize
+
+Get-Service -Name win* | Format-Table -Property Name,Status,StartType,DisplayName,DependentServices -AutoSize
+
+Get-Service -Name win* | Format-Table -Property Name,Status,StartType,DisplayName,DependentServices -Wrap
+
+Get-Process -Name iexplore | Format-Table -Wrap -AutoSize -Property FileVersion,Path,Name,Id
+
+Get-Service -Name win* | Sort-Object StartType | Format-Table -GroupBy StartType
+
+Reference: https://docs.microsoft.com/en-us/powershell/scripting/samples/using-format-commands-to-change-output-view?view=powershell-7.1
+
+----------------------------------------------------
+
